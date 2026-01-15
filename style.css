@@ -142,7 +142,7 @@ section {
     align-items: center;
     justify-content: center;
     text-align: center;
-    background: url('img/banner_backgound.png') center center no-repeat;
+    background: url('img/banner_desktop.png') center center no-repeat;
     background-size: cover;
     padding-top: 0;
     margin-top: 70px;
@@ -777,6 +777,7 @@ section {
     .hero {
         height: 40vh;
         min-height: 280px;
+        background-image: url('img/banner_mobile.png');
         background-position: right center;
     }
 
@@ -817,6 +818,7 @@ section {
     .hero {
         height: 35vh;
         min-height: 250px;
+        background-image: url('img/banner_mobile.png');
         background-position: right center;
     }
 
