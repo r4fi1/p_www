@@ -775,7 +775,7 @@ section {
     }
 
     .hero {
-        aspect-ratio: 1525 / 444;
+        aspect-ratio: 1015 / 712;
         min-height: 220px;
         background-image: url('img/banner_mobile.jpg');
         background-position: center center;
@@ -816,7 +816,7 @@ section {
 
 @media (max-width: 480px) {
     .hero {
-        aspect-ratio: 1525 / 444;
+        aspect-ratio: 1015 / 712;
         min-height: 180px;
         background-image: url('img/banner_mobile.jpg');
         background-position: center center;
