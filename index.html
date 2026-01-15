@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Body Home - Masaż z dojazdem</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Dancing+Script:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Nawigacja -->
+    <nav class="navbar" id="navbar">
+        <div class="container">
+            <button class="nav-toggle" id="navToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#home" class="nav-link">Start</a></li>
+                <li><a href="#about" class="nav-link">O mnie</a></li>
+                <li><a href="#offer" class="nav-link">Oferta</a></li>
+                <li><a href="#pricing" class="nav-link">Cennik</a></li>
+                <li><a href="#tips" class="nav-link">Przygotuj się</a></li>
+                <li><a href="#contact" class="nav-link">Kontakt</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-overlay"></div>
+    </section>
+
+    <!-- O mnie -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">O mnie</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>Nazywam się <strong>Piotr</strong>, mam 21 lat i jestem certyfikowanym masażystą I i II stopnia oraz studentem 3. roku fizjoterapii. Masaż to moja pasja i świadomie obrana droga rozwoju zawodowego.</p>
+                    <p>W swojej pracy stawiam na <strong>uważność, komfort i indywidualne podejście</strong> do każdej osoby. Dbam o odpowiednią atmosferę, jakość wykonywanego masażu oraz dopasowanie technik do samopoczucia i oczekiwań klienta.</p>
+                    <p>Oferuję <strong>mobilne usługi masażu</strong>, dzięki czemu możesz zadbać o relaks i rozluźnienie w wygodnych warunkach własnego domu.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Oferta -->
+    <section id="offer" class="offer">
+        <div class="container">
+            <h2 class="section-title">Oferta</h2>
+            <div class="offer-grid">
+                <!-- Masaż klasyczny -->
+                <div class="offer-card">
+                    <div class="offer-image">
+                        <div class="image-placeholder">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M12 2L2 7l10 5 10-5-10-5z"></path>
+                                <path d="M2 17l10 5 10-5M2 12l10 5 10-5"></path>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="offer-content">
+                        <h3>Masaż klasyczny</h3>
+                        <p>Tradycyjny masaż obejmujący podstawowe techniki pracy z mięśniami. Pomaga w rozluźnieniu ciała, poprawie komfortu ruchu oraz ogólnym odprężeniu.</p>
+                    </div>
+                </div>
+
+                <!-- Masaż klasyczny + bańki -->
+                <div class="offer-card">
+                    <div class="offer-image">
+                        <div class="image-placeholder">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <circle cx="12" cy="12" r="10"></circle>
+                                <path d="M8 14s1.5 2 4 2 4-2 4-2"></path>
+                                <line x1="9" y1="9" x2="9.01" y2="9"></line>
+                                <line x1="15" y1="9" x2="15.01" y2="9"></line>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="offer-content">
+                        <h3>Masaż klasyczny + stawianie baniek</h3>
+                        <p>Połączenie masażu klasycznego z pracą przy użyciu baniek. Zabieg wykonywany w celu intensywniejszego rozluźnienia tkanek i pracy na wybranych obszarach ciała.</p>
+                    </div>
+                </div>
+
+                <!-- Masaż izometryczny -->
+                <div class="offer-card">
+                    <div class="offer-image">
+                        <div class="image-placeholder">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M22 12h-4l-3 9L9 3l-3 9H2"></path>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="offer-content">
+                        <h3>Masaż izometryczny</h3>
+                        <p>Masaż oparty na napinaniu i rozluźnianiu mięśni w określonych pozycjach. Skierowany do osób chcących zadbać o kondycję mięśni i świadomość pracy własnego ciała.</p>
+                    </div>
+                </div>
+
+                <!-- Masaż limfatyczny -->
+                <div class="offer-card">
+                    <div class="offer-image">
+                        <div class="image-placeholder">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                                <polyline points="22 4 12 14.01 9 11.01"></polyline>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="offer-content">
+                        <h3>Masaż limfatyczny</h3>
+                        <p>Delikatny, rytmiczny masaż wykonywany wolnym tempem. Skoncentrowany na poprawie komfortu, uczuciu lekkości oraz relaksie.</p>
+                    </div>
+                </div>
+
+                <!-- Masaż bańką chińską -->
+                <div class="offer-card">
+                    <div class="offer-image">
+                        <div class="image-placeholder">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path>
+                                <polyline points="3.27 6.96 12 12.01 20.73 6.96"></polyline>
+                                <line x1="12" y1="22.08" x2="12" y2="12"></line>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="offer-content">
+                        <h3>Masaż bańką chińską (modelujący)</h3>
+                        <p>Masaż wykonywany przy użyciu elastycznych baniek. Skupia się na pracy z tkankami, poprawie wyglądu skóry oraz modelowaniu wybranych partii ciała.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Cennik -->
+    <section id="pricing" class="pricing-section">
+        <div class="container">
+            <h2 class="section-title">Cennik</h2>
+            <div class="pricing-grid">
+                <!-- Masaż klasyczny -->
+                <div class="pricing-item">
+                    <h3>Masaż klasyczny</h3>
+                    <div class="pricing-options">
+                        <div class="price-option">
+                            <span class="duration">1 godzina</span>
+                            <span class="price">150 zł</span>
+                        </div>
+                        <div class="price-option">
+                            <span class="duration">1,5 godziny</span>
+                            <span class="price">200 zł</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Masaż klasyczny + bańki -->
+                <div class="pricing-item">
+                    <h3>Masaż klasyczny + stawianie baniek</h3>
+                    <div class="pricing-options">
+                        <div class="price-option">
+                            <span class="duration">1 godzina</span>
+                            <span class="price">170 zł</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Masaż izometryczny -->
+                <div class="pricing-item">
+                    <h3>Masaż izometryczny</h3>
+                    <div class="pricing-options">
+                        <div class="price-option">
+                            <span class="duration">1 godzina</span>
+                            <span class="price">150 zł</span>
+                        </div>
+                        <div class="price-option">
+                            <span class="duration">1,5 godziny</span>
+                            <span class="price">200 zł</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Masaż limfatyczny -->
+                <div class="pricing-item">
+                    <h3>Masaż limfatyczny</h3>
+                    <div class="pricing-options">
+                        <div class="price-option">
+                            <span class="duration">1 godzina</span>
+                            <span class="price">150 zł</span>
+                        </div>
+                        <div class="price-option">
+                            <span class="duration">1,5 godziny</span>
+                            <span class="price">200 zł</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Masaż bańką chińską -->
+                <div class="pricing-item">
+                    <h3>Masaż bańką chińską (modelujący)</h3>
+                    <div class="pricing-options">
+                        <div class="price-option">
+                            <span class="duration">1 godzina</span>
+                            <span class="price">150 zł</span>
+                        </div>
+                        <div class="price-option">
+                            <span class="duration">1,5 godziny</span>
+                            <span class="price">200 zł</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pricing-note">
+                <p><strong>Informacje dodatkowe:</strong></p>
+                <ul>
+                    <li>Dojazd do klienta w cenie</li>
+                    <li>Opłata parkingowa (jeśli dotyczy)</li>
+                    <li>Dojazd powyżej 15 km + 10 zł</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Przygotuj się -->
+    <section id="tips" class="tips">
+        <div class="container">
+            <h2 class="section-title">Przygotuj się</h2>
+            <div class="tips-grid">
+                <!-- Jak się przygotować -->
+                <div class="tips-card">
+                    <div class="tips-icon tips-icon-prepare">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <polyline points="20 6 9 17 4 12"></polyline>
+                        </svg>
+                    </div>
+                    <h3>Jak przygotować się do masażu?</h3>
+                    <ul class="tips-list">
+                        <li>Zjedz lekki posiłek najpóźniej 1–2 godziny przed masażem</li>
+                        <li>Unikaj intensywnego wysiłku fizycznego tuż przed zabiegiem</li>
+                        <li>Weź prysznic i zadbaj o podstawową higienę ciała</li>
+                        <li>Załóż wygodne ubranie, które łatwo zdjąć lub zmienić</li>
+                        <li>Jeśli masz szczególne preferencje lub obszary wrażliwe na dotyk, poinformuj o tym przed masażem</li>
+                        <li>W przypadku masażu mobilnego przygotuj spokojne miejsce z dostępem do wolnej przestrzeni</li>
+                    </ul>
+                </div>
+
+                <!-- Przeciwskazania -->
+                <div class="tips-card">
+                    <div class="tips-icon tips-icon-warning">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"></path>
+                            <line x1="12" y1="9" x2="12" y2="13"></line>
+                            <line x1="12" y1="17" x2="12.01" y2="17"></line>
+                        </svg>
+                    </div>
+                    <h3>Poznaj przeciwskazania do masażu!</h3>
+                    <p class="tips-intro">Masażu nie wykonuje się w przypadku:</p>
+                    <ul class="tips-list">
+                        <li>Gorączki</li>
+                        <li>Infekcji</li>
+                        <li>Stanów zapalnych organizmu</li>
+                        <li>Chorób zakaźnych</li>
+                        <li>Świeżych urazów, złamań, skręceń</li>
+                        <li>Otwartych ran, uszkodzeń skóry, oparzeń</li>
+                        <li>Chorób skóry w miejscu planowanego masażu</li>
+                        <li>Zakrzepicy, żylaków (w miejscu zabiegu)</li>
+                        <li>Nowotworów (bez zgody lekarza)</li>
+                        <li>Zaawansowanych chorób układu krążenia</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Kontakt -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Kontakt</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>Umów się na wizytę</h3>
+                    <p class="contact-description">Jeśli masz pytania lub chcesz umówić się na masaż, skontaktuj się ze mną. Chętnie odpowiem na wszystkie wątpliwości.</p>
+                    
+                    <div class="contact-methods">
+                        <div class="contact-method">
+                            <div class="contact-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                                </svg>
+                            </div>
+                            <div>
+                                <h4>Telefon</h4>
+                                <p><a href="tel:+48123456789">+48 123 456 789</a></p>
+                            </div>
+                        </div>
+
+                        <div class="contact-method">
+                            <div class="contact-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                                    <polyline points="22,6 12,13 2,6"></polyline>
+                                </svg>
+                            </div>
+                            <div>
+                                <h4>Email</h4>
+                                <p><a href="mailto:piotr.masaz@example.com">piotr.masaz@example.com</a></p>
+                            </div>
+                        </div>
+
+                        <div class="contact-method">
+                            <div class="contact-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                                    <circle cx="12" cy="10" r="3"></circle>
+                                </svg>
+                            </div>
+                            <div>
+                                <h4>Obszar działania</h4>
+                                <p>Warszawa południe, Piaseczno i okolice</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 Body & Home - Wszystkie prawa zastrzeżone.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
