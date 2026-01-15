@@ -146,8 +146,8 @@ section {
     background-size: cover;
     padding-top: 0;
     margin-top: 70px;
-    min-height: 345px;
-    height: 57.5vh;
+    min-height: 380px;
+    height: 63vh;
 }
 
 .hero::before {
@@ -777,6 +777,7 @@ section {
     .hero {
         height: 40vh;
         min-height: 280px;
+        background-position: right center;
     }
 
     .hero-title {
@@ -816,6 +817,7 @@ section {
     .hero {
         height: 35vh;
         min-height: 250px;
+        background-position: right center;
     }
 
     .hero-title {
