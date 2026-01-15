@@ -142,12 +142,12 @@ section {
     align-items: center;
     justify-content: center;
     text-align: center;
-    background: url('img/banner_backgound.png') center top/contain no-repeat;
-    background-size: 70% auto;
+    background: url('img/banner_backgound.png') center center no-repeat;
+    background-size: 100% 100%;
     padding-top: 0;
     margin-top: 70px;
-    min-height: 300px;
-    height: 50vh;
+    min-height: 345px;
+    height: 57.5vh;
 }
 
 .hero::before {
