@@ -142,12 +142,12 @@ section {
     align-items: center;
     justify-content: center;
     text-align: center;
-    background: url('img/banner_desktop.png') center center no-repeat;
+    background: url('img/banner_desktop.jpg') center center no-repeat;
     background-size: cover;
     padding-top: 0;
     margin-top: 70px;
-    min-height: 380px;
-    height: 63vh;
+    aspect-ratio: 1525 / 444;
+    min-height: 250px;
 }
 
 .hero::before {
@@ -775,10 +775,10 @@ section {
     }
 
     .hero {
-        height: 40vh;
-        min-height: 280px;
-        background-image: url('img/banner_mobile.png');
-        background-position: right center;
+        aspect-ratio: 1525 / 444;
+        min-height: 220px;
+        background-image: url('img/banner_mobile.jpg');
+        background-position: center center;
     }
 
     .hero-title {
@@ -816,10 +816,10 @@ section {
 
 @media (max-width: 480px) {
     .hero {
-        height: 35vh;
-        min-height: 250px;
-        background-image: url('img/banner_mobile.png');
-        background-position: right center;
+        aspect-ratio: 1525 / 444;
+        min-height: 180px;
+        background-image: url('img/banner_mobile.jpg');
+        background-position: center center;
     }
 
     .hero-title {
