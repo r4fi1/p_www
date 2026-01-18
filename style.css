@@ -238,9 +238,16 @@ section {
 }
 
 .about-content {
-    max-width: 900px;
+    max-width: 1100px;
     margin: 0 auto;
-    text-align: justify;
+    display: flex;
+    gap: 3rem;
+    align-items: center;
+}
+
+.about-image {
+    flex: 0 0 350px;
+    min-width: 350px;
 }
 
 .about-image .image-placeholder {
@@ -267,6 +274,11 @@ section {
     height: 50%;
     color: var(--primary-color);
     opacity: 0.6;
+}
+
+.about-text {
+    flex: 1;
+    text-align: justify;
 }
 
 .about-text p {
@@ -794,7 +806,15 @@ section {
     }
 
     .about-content {
-        grid-template-columns: 1fr;
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .about-image {
+        flex: 0 0 auto;
+        min-width: 100%;
+        max-width: 350px;
+        margin: 0 auto;
     }
 
     .offer-grid {
