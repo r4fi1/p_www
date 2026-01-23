@@ -472,6 +472,10 @@ section {
     width: 100%;
     max-width: 320px;
     flex: 0 1 320px;
+    text-decoration: none;
+    color: inherit;
+    display: block;
+    cursor: pointer;
 }
 
 .pricing-item:hover {
