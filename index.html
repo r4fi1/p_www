@@ -26,163 +26,171 @@
     <!-- Schema.org LocalBusiness + Services -->
     <script type="application/ld+json">
     {
-    "@context": "https://schema.org",
-    "@graph": [
-        {
-        "@type": "LocalBusiness",
-        "@id": "https://bodyhome.pl/#business",
-        "name": "Body Home",
-        "url": "https://bodyhome.pl/",
-        "image": "https://bodyhome.pl/img/o_mnie.jpg",
-        "telephone": "+48536410466",
-        "email": "bodyhomemasaz@gmail.com",
-        "areaServed": [
-            { "@type": "City", "name": "Warszawa" },
-            { "@type": "City", "name": "Piaseczno" },
-            { "@type": "City", "name": "Legionowo" },
-            { "@type": "AdministrativeArea", "name": "okolice Warszawy" }
-        ],
-        "description": "Mobilny masaż z dojazdem do domu: masaż klasyczny, limfatyczny, izometryczny, bańka chińska oraz masaż klasyczny ze stawianiem baniek. Obszar działania: Warszawa, Piaseczno, Legionowo i okolice.",
-        "priceRange": "$$",
-        "founder": {
-            "@type": "Person",
-            "name": "Piotr Winter"
-        },
-        "contactPoint": [
+        "@context": "https://schema.org",
+        "@graph": [
             {
-            "@type": "ContactPoint",
+            "@type": "LocalBusiness",
+            "@id": "https://bodyhome.pl/#business",
+            "name": "Body Home",
+            "url": "https://bodyhome.pl/",
+            "image": "https://bodyhome.pl/img/banner_desktop.jpg",
             "telephone": "+48536410466",
-            "contactType": "customer service",
-            "areaServed": "PL",
-            "availableLanguage": ["pl"]
+            "email": "bodyhomemasaz@gmail.com",
+            "address": {
+                "@type": "PostalAddress",
+                "streetAddress": "ul. Rekreacyjna",
+                "addressLocality": "Józefosław",
+                "addressRegion": "Mazowieckie",
+                "postalCode": "05-500",
+                "addressCountry": "PL"
+                },
+            "areaServed": [
+                { "@type": "City", "name": "Warszawa" },
+                { "@type": "City", "name": "Piaseczno" },
+                { "@type": "City", "name": "Legionowo" },
+                { "@type": "AdministrativeArea", "name": "okolice Warszawy" }
+            ],
+            "description": "Mobilny masaż z dojazdem do domu: masaż klasyczny, limfatyczny, izometryczny, bańka chińska oraz masaż klasyczny ze stawianiem baniek. Obszar działania: Warszawa, Piaseczno, Legionowo i okolice.",
+            "priceRange": "$$",
+            "founder": {
+                "@type": "Person",
+                "name": "Piotr Winter"
+            },
+            "contactPoint": [
+                {
+                "@type": "ContactPoint",
+                "telephone": "+48536410466",
+                "contactType": "customer service",
+                "areaServed": "PL",
+                "availableLanguage": ["pl"]
+                }
+            ],
+            "hasOfferCatalog": {
+                "@type": "OfferCatalog",
+                "name": "Oferta masaży z dojazdem",
+                "itemListElement": [
+                { "@type": "Offer", "itemOffered": { "@id": "https://bodyhome.pl/#service-klasyczny" } },
+                { "@type": "Offer", "itemOffered": { "@id": "https://bodyhome.pl/#service-klasyczny-banki" } },
+                { "@type": "Offer", "itemOffered": { "@id": "https://bodyhome.pl/#service-izometryczny" } },
+                { "@type": "Offer", "itemOffered": { "@id": "https://bodyhome.pl/#service-limfatyczny" } },
+                { "@type": "Offer", "itemOffered": { "@id": "https://bodyhome.pl/#service-banka-chinska" } }
+                ]
             }
-        ],
-        "hasOfferCatalog": {
-            "@type": "OfferCatalog",
-            "name": "Oferta masaży z dojazdem",
-            "itemListElement": [
-            { "@type": "Offer", "itemOffered": { "@id": "https://bodyhome.pl/#service-klasyczny" } },
-            { "@type": "Offer", "itemOffered": { "@id": "https://bodyhome.pl/#service-klasyczny-banki" } },
-            { "@type": "Offer", "itemOffered": { "@id": "https://bodyhome.pl/#service-izometryczny" } },
-            { "@type": "Offer", "itemOffered": { "@id": "https://bodyhome.pl/#service-limfatyczny" } },
-            { "@type": "Offer", "itemOffered": { "@id": "https://bodyhome.pl/#service-banka-chinska" } }
+            },
+
+            {
+            "@type": "Service",
+            "@id": "https://bodyhome.pl/#service-klasyczny",
+            "name": "Masaż klasyczny",
+            "provider": { "@id": "https://bodyhome.pl/#business" },
+            "areaServed": ["Warszawa", "Piaseczno", "Legionowo", "okolice"],
+            "offers": [
+                {
+                "@type": "Offer",
+                "price": "150",
+                "priceCurrency": "PLN",
+                "description": "1 godzina",
+                "url": "https://bodyhome.pl/#masaz-klasyczny"
+                },
+                {
+                "@type": "Offer",
+                "price": "200",
+                "priceCurrency": "PLN",
+                "description": "1,5 godziny",
+                "url": "https://bodyhome.pl/#masaz-klasyczny"
+                }
             ]
-        }
-        },
-
-        {
-        "@type": "Service",
-        "@id": "https://bodyhome.pl/#service-klasyczny",
-        "name": "Masaż klasyczny",
-        "provider": { "@id": "https://bodyhome.pl/#business" },
-        "areaServed": ["Warszawa", "Piaseczno", "Legionowo", "okolice"],
-        "offers": [
-            {
-            "@type": "Offer",
-            "price": "150",
-            "priceCurrency": "PLN",
-            "description": "1 godzina",
-            "url": "https://bodyhome.pl/#masaz-klasyczny"
             },
-            {
-            "@type": "Offer",
-            "price": "200",
-            "priceCurrency": "PLN",
-            "description": "1,5 godziny",
-            "url": "https://bodyhome.pl/#masaz-klasyczny"
-            }
-        ]
-        },
 
-        {
-        "@type": "Service",
-        "@id": "https://bodyhome.pl/#service-klasyczny-banki",
-        "name": "Masaż klasyczny + stawianie baniek",
-        "provider": { "@id": "https://bodyhome.pl/#business" },
-        "areaServed": ["Warszawa", "Piaseczno", "Legionowo", "okolice"],
-        "offers": [
             {
-            "@type": "Offer",
-            "price": "170",
-            "priceCurrency": "PLN",
-            "description": "1 godzina",
-            "url": "https://bodyhome.pl/#masaz-klasyczny-banki"
-            }
-        ]
-        },
-
-        {
-        "@type": "Service",
-        "@id": "https://bodyhome.pl/#service-izometryczny",
-        "name": "Masaż izometryczny",
-        "provider": { "@id": "https://bodyhome.pl/#business" },
-        "areaServed": ["Warszawa", "Piaseczno", "Legionowo", "okolice"],
-        "offers": [
-            {
-            "@type": "Offer",
-            "price": "150",
-            "priceCurrency": "PLN",
-            "description": "1 godzina",
-            "url": "https://bodyhome.pl/#masaz-izometryczny"
+            "@type": "Service",
+            "@id": "https://bodyhome.pl/#service-klasyczny-banki",
+            "name": "Masaż klasyczny + stawianie baniek",
+            "provider": { "@id": "https://bodyhome.pl/#business" },
+            "areaServed": ["Warszawa", "Piaseczno", "Legionowo", "okolice"],
+            "offers": [
+                {
+                "@type": "Offer",
+                "price": "170",
+                "priceCurrency": "PLN",
+                "description": "1 godzina",
+                "url": "https://bodyhome.pl/#masaz-klasyczny-banki"
+                }
+            ]
             },
-            {
-            "@type": "Offer",
-            "price": "200",
-            "priceCurrency": "PLN",
-            "description": "1,5 godziny",
-            "url": "https://bodyhome.pl/#masaz-izometryczny"
-            }
-        ]
-        },
 
-        {
-        "@type": "Service",
-        "@id": "https://bodyhome.pl/#service-limfatyczny",
-        "name": "Masaż limfatyczny",
-        "provider": { "@id": "https://bodyhome.pl/#business" },
-        "areaServed": ["Warszawa", "Piaseczno", "Legionowo", "okolice"],
-        "offers": [
             {
-            "@type": "Offer",
-            "price": "150",
-            "priceCurrency": "PLN",
-            "description": "1 godzina",
-            "url": "https://bodyhome.pl/#masaz-limfatyczny"
+            "@type": "Service",
+            "@id": "https://bodyhome.pl/#service-izometryczny",
+            "name": "Masaż izometryczny",
+            "provider": { "@id": "https://bodyhome.pl/#business" },
+            "areaServed": ["Warszawa", "Piaseczno", "Legionowo", "okolice"],
+            "offers": [
+                {
+                "@type": "Offer",
+                "price": "150",
+                "priceCurrency": "PLN",
+                "description": "1 godzina",
+                "url": "https://bodyhome.pl/#masaz-izometryczny"
+                },
+                {
+                "@type": "Offer",
+                "price": "200",
+                "priceCurrency": "PLN",
+                "description": "1,5 godziny",
+                "url": "https://bodyhome.pl/#masaz-izometryczny"
+                }
+            ]
             },
-            {
-            "@type": "Offer",
-            "price": "200",
-            "priceCurrency": "PLN",
-            "description": "1,5 godziny",
-            "url": "https://bodyhome.pl/#masaz-limfatyczny"
-            }
-        ]
-        },
 
-        {
-        "@type": "Service",
-        "@id": "https://bodyhome.pl/#service-banka-chinska",
-        "name": "Masaż bańką chińską (modelujący)",
-        "provider": { "@id": "https://bodyhome.pl/#business" },
-        "areaServed": ["Warszawa", "Piaseczno", "Legionowo", "okolice"],
-        "offers": [
             {
-            "@type": "Offer",
-            "price": "150",
-            "priceCurrency": "PLN",
-            "description": "1 godzina",
-            "url": "https://bodyhome.pl/#masaz-banka-chinska"
+            "@type": "Service",
+            "@id": "https://bodyhome.pl/#service-limfatyczny",
+            "name": "Masaż limfatyczny",
+            "provider": { "@id": "https://bodyhome.pl/#business" },
+            "areaServed": ["Warszawa", "Piaseczno", "Legionowo", "okolice"],
+            "offers": [
+                {
+                "@type": "Offer",
+                "price": "150",
+                "priceCurrency": "PLN",
+                "description": "1 godzina",
+                "url": "https://bodyhome.pl/#masaz-limfatyczny"
+                },
+                {
+                "@type": "Offer",
+                "price": "200",
+                "priceCurrency": "PLN",
+                "description": "1,5 godziny",
+                "url": "https://bodyhome.pl/#masaz-limfatyczny"
+                }
+            ]
             },
+
             {
-            "@type": "Offer",
-            "price": "200",
-            "priceCurrency": "PLN",
-            "description": "1,5 godziny",
-            "url": "https://bodyhome.pl/#masaz-banka-chinska"
+            "@type": "Service",
+            "@id": "https://bodyhome.pl/#service-banka-chinska",
+            "name": "Masaż bańką chińską (modelujący)",
+            "provider": { "@id": "https://bodyhome.pl/#business" },
+            "areaServed": ["Warszawa", "Piaseczno", "Legionowo", "okolice"],
+            "offers": [
+                {
+                "@type": "Offer",
+                "price": "150",
+                "priceCurrency": "PLN",
+                "description": "1 godzina",
+                "url": "https://bodyhome.pl/#masaz-banka-chinska"
+                },
+                {
+                "@type": "Offer",
+                "price": "200",
+                "priceCurrency": "PLN",
+                "description": "1,5 godziny",
+                "url": "https://bodyhome.pl/#masaz-banka-chinska"
+                }
+            ]
             }
         ]
-        }
-    ]
     }
     </script>
 
@@ -484,7 +492,7 @@
                             </div>
                             <div>
                                 <h4>Obszar działania</h4>
-                                <p>Warszawa południe, Piaseczno i okolice, Legionowo</p>
+                                <p>Warszawa (południe), Piaseczno, Legionowo i okolice</p>
                             </div>
                         </div>
                     </div>
