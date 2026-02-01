@@ -735,6 +735,12 @@ section {
     color: white;
 }
 
+.contact-icon img {
+    width: 36px;
+    height: 36px;
+    object-fit: contain;
+}
+
 .contact-method h4 {
     color: var(--text-dark);
     margin-bottom: 0.3rem;

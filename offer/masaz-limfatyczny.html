@@ -23,6 +23,69 @@
 
         gtag('config', 'G-BE1T5VVSLF');
     </script>
+
+    <!-- Schema.org Service -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@graph": [
+            {
+                "@type": "Service",
+                "@id": "https://bodyhome.pl/offer/masaz-limfatyczny.html#service",
+                "name": "Masaż limfatyczny z dojazdem",
+                "description": "Delikatny, rytmiczny masaż limfatyczny wykonywany wolnym tempem. Skoncentrowany na poprawie komfortu, uczuciu lekkości, wsparciu naturalnych procesów organizmu oraz głębokim relaksie. Profesjonalna usługa z dojazdem do domu.",
+                "provider": {
+                    "@type": "LocalBusiness",
+                    "@id": "https://bodyhome.pl/#business",
+                    "name": "Body Home",
+                    "telephone": "+48536410466",
+                    "email": "bodyhomemasaz@gmail.com"
+                },
+                "areaServed": [
+                    {"@type": "City", "name": "Warszawa"},
+                    {"@type": "City", "name": "Piaseczno"},
+                    {"@type": "City", "name": "Legionowo"},
+                    {"@type": "AdministrativeArea", "name": "okolice Warszawy"}
+                ],
+                "offers": [
+                    {
+                        "@type": "Offer",
+                        "price": "150",
+                        "priceCurrency": "PLN",
+                        "description": "1 godzina",
+                        "url": "https://bodyhome.pl/offer/masaz-limfatyczny.html",
+                        "availability": "https://schema.org/InStock"
+                    },
+                    {
+                        "@type": "Offer",
+                        "price": "200",
+                        "priceCurrency": "PLN",
+                        "description": "1,5 godziny",
+                        "url": "https://bodyhome.pl/offer/masaz-limfatyczny.html",
+                        "availability": "https://schema.org/InStock"
+                    }
+                ]
+            },
+            {
+                "@type": "BreadcrumbList",
+                "itemListElement": [
+                    {
+                        "@type": "ListItem",
+                        "position": 1,
+                        "name": "Strona główna",
+                        "item": "https://bodyhome.pl/"
+                    },
+                    {
+                        "@type": "ListItem",
+                        "position": 2,
+                        "name": "Masaż limfatyczny",
+                        "item": "https://bodyhome.pl/offer/masaz-limfatyczny.html"
+                    }
+                ]
+            }
+        ]
+    }
+    </script>
 </head>
 
 <body>
@@ -117,6 +180,8 @@ Podczas masażu wykonywane są wolne, rytmiczne ruchy, które pobudzają przepł
                             <p><a href="tel:+48536410466">+48 536 410 466</a></p>
                             <p><strong>Email:</strong></p>
                             <p><a href="mailto:bodyhomemasaz@gmail.com">bodyhomemasaz@gmail.com</a></p>
+                            <p><strong>Booksy:</strong></p>
+                            <p><a href="http://bodyhomemasazzdojazdem.booksy.com/f/" target="_blank" rel="noopener noreferrer">Zarezerwuj online</a></p>
                         </div>
                     </div>
 
@@ -232,6 +297,26 @@ Podczas masażu wykonywane są wolne, rytmiczne ruchy, które pobudzają przepł
                             <div>
                                 <h4>Obszar działania</h4>
                                 <p>Warszawa (południe), Piaseczno, Legionowo i okolice</p>
+                            </div>
+                        </div>
+
+                        <div class="contact-method">
+                            <div class="contact-icon">
+                                <img src="../img/booksy-logo-new.svg" alt="Booksy logo">
+                            </div>
+                            <div>
+                                <h4>Booksy</h4>
+                                <p><a href="http://bodyhomemasazzdojazdem.booksy.com/f/" target="_blank" rel="noopener noreferrer">Zarezerwuj online</a></p>
+                            </div>
+                        </div>
+
+                        <div class="contact-method">
+                            <div class="contact-icon">
+                                <img src="../img/fb_logo_trans.png" alt="Facebook logo">
+                            </div>
+                            <div>
+                                <h4>Facebook</h4>
+                                <p><a href="https://www.facebook.com/profile.php?id=61586564490808" target="_blank" rel="noopener noreferrer">Odwiedź profil</a></p>
                             </div>
                         </div>
                     </div>
