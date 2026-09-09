@@ -148,7 +148,7 @@ if (priceElement) {
 }
 
 function animatePrice() {
-    const target = 150;
+    const target = 160;
     const duration = 1000;
     const step = target / (duration / 16);
     let current = 0;
